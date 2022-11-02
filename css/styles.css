@@ -1,0 +1,206 @@
+:root {
+    --main: #2a2822;
+    --second: #978e70;
+    --third: #525049;
+    --light: #d0c6a6;
+    --bg: #373429b1;
+}
+
+    /*Box Sizing, para que el padding no sume pixeles sino que use los asignados*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1 rem = 10px*/ 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--main);
+    font-size: 16px;  /*1 rem = 10px*/
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--second);
+    font-weight: 100;
+    text-align: center;
+}
+
+    /*Aqui el codigo*/
+
+.org {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.margencontenedor {
+    width: 100rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.container {
+    width: 100rem;
+    /* Para margin: Arriba, derecha, abajo e izquierda*/
+    margin: 0 auto;
+}
+
+    /*Barra de navegación*/
+.navgtbar {
+    transition: 0.75s;
+}   
+
+.bgnavegacion {
+    background-color: var(--light);
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion a {
+    color: var(--main);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    transition: 0.75s;
+}
+
+.navegacion a:hover {
+    color: var(--second);
+    background-color: var(--third);
+}
+    
+.scrolldwn .bgnavegacion{
+    background-color: #625b4689;
+}
+
+.scrolldwn a {
+    color: #e1d7b7;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.scrolldwn a:hover {
+    color: var(--light);
+    background-color: var(--main);
+}
+
+    /*Margen y texto*/
+.margborder {
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+.margborder p {
+    line-height: 1.2;
+    color: var(--light);
+    font-family: 'Rokkitt', serif;
+    text-align: center;
+}
+
+    /*Multimedia*/
+.media {
+    margin: 4rem auto;
+}
+
+.youtube {
+    border: 0.5rem solid var(--third);;
+}
+
+.survey {
+    text-align: center;
+    margin: 4rem auto;
+}
+
+.graphdata {
+    margin: 4rem 10rem;
+    border-radius: 1.2em;
+    background-color: var(--light);
+}
+
+    /*Swal*/
+.swal-overlay {
+    background-color: var(--bg);
+}
+
+.swal-modal {
+    background-color: var(--main);
+    border-radius: 0;
+    border: 0.3rem solid var(--second);
+}
+
+.swal-title {
+    font-size: 3rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--second);
+    font-weight: 100;
+}
+
+.swal-text {
+    text-align: center;
+    color: var(--light);
+    font-size: 1.6rem;
+    font-family: 'Rokkitt', serif;
+}
+
+.swal-button {
+    border-radius: 0;
+    background-color: var(--second);
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--third);
+    font-size: 1.2rem;
+    border: 0.3rem solid var(--third);
+}
+
+    /*Carrusel*/
+.carousel-inner {
+    max-height: 80rem;
+}
+
+    /*Data Collection*/
+#part4 h1 {
+    color: var(--light);
+}
+
+.disgrid
+{
+    margin: 4rem 1rem;
+
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+    grid-column-gap: 2rem;
+    grid-row-gap: 0.5rem;
+}
+
+.disgrid p {
+    line-height: 1.2;
+    color: var(--light);
+    text-align: center;
+    font-family: 'Rokkitt', serif;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 2 / 1 / 3 / 2; }
+.div5 { grid-area: 2 / 2 / 3 / 3; }
+.div6 { grid-area: 2 / 3 / 3 / 4; }
+.div7 { grid-area: 3 / 1 / 4 / 2; }
+.div8 { grid-area: 3 / 2 / 4 / 3; }
+.div9 { grid-area: 3 / 3 / 4 / 4; }
+.div10 { grid-area: 4 / 1 / 5 / 2; }
+.div11 { grid-area: 4 / 2 / 5 / 3; }
+.div12 { grid-area: 4 / 3 / 5 / 4; }
+.div13 { grid-area: 5 / 1 / 6 / 2; }
+.div14 { grid-area: 5 / 2 / 6 / 3; }
+.div15 { grid-area: 5 / 3 / 6 / 4; }
